@@ -12,7 +12,17 @@ int main() {
     // 4. Print the entered word and its length
     printf("You entered: %s\n",sentence);
     int length = strlen(sentence);
+    printf("Character count: %d\n",length);
     printf("Length: %d\n",length);
-    
+    int vowel = 0;
+    for (int i=0;i<length;i++){
+        if(sentence[i]=='a' || sentence[i]=='e' || sentence[i]=='i' 
+        || sentence[i]=='o' || sentence[i]=='u' ||
+        sentence[i]=='A' || sentence[i]=='E' || sentence[i]=='I'
+         || sentence[i]=='O' || sentence[i]=='U'){
+            vowel++;
+         }
+    }
+    printf("Vowel count: %d\n",vowel);
     return 0;
 }
