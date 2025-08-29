@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main() {
     // TODO: Write your code here
     // 1. Print the prompt message
-    printf("Enter a sentence: \n");
+    printf("Enter a sentence: ");
     // 2. Declare a character array named 'sentence' with 200 elements
     char sentence[200];
     // 3. Read input using scanf with %s format specifier
@@ -24,5 +25,10 @@ int main() {
          }
     }
     printf("Vowel count: %d\n",vowel);
+    for (int i =0;i<length;i++){
+        sentence[i]=toupper(sentence[i]);
+    }
+    printf("Uppercase: %s\n",sentence);
+
     return 0;
 }
