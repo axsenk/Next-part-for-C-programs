@@ -50,14 +50,14 @@ for (int i = 0;i<n;i++){
 ascii = arr[i];
 if(ascii>=97 && ascii<=122){
 position = ascii -97;
-position = (position-3)%26;
+position = (position-3+26)%26;
 ascii = 97 + position;
 printf("%c",ascii);
 
 }
 else if(ascii>=65 && ascii<=90){
 position = ascii-65;
-position= (position-3)%26;
+position= (position-3+26)%26;
 ascii = 65 + position;
 printf("%c",ascii);
 }
